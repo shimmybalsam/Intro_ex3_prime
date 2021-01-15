@@ -1,0 +1,71 @@
+shimmy10
+204693352
+
+Shimon Balsam
+
+
+I discussed the exercise with: Shaked Weitz.
+
+=============================
+
+=======================
+= README for ex3:
+ex3.py
+====================================================
+
+
+=================================================================
+=  Description: =
+The program contains 8 functions:
+
+The first creates and returns a list filled interactively by the respondent.
+
+The second receives a list and returns a string of all its components put
+together.
+
+The third receives a list of numbers and returns their average.
+
+The fourth receives two lists and check if the lists are alike, only formatted
+by an integer difference, returning True or False accordingly.
+
+The fifth receives a list of numbers and returns a list which indicates,
+by slot, how many times the number of each specific slot, showed up in the
+original list.
+
+The sixth receives a positive, integer number,
+and returns it's prime factors/sources.
+
+The seventh receives two lists and returns a list which each one of it's
+components are cartesian duos of the original two lists.
+
+The eighth receives an integer number and a list of numbers and returns a list
+which components are duos of the original lists components which add up to the
+recieved number.
+=================================================================
+
+
+======================
+=
+Special Comments
+=
+1. cyclic('abcd','bcda') returns True, even though the parameters given
+are strings and not lists, as required, because although we assumed that
+the parameters which the function receives are lists, we never defined the
+program as such, and all the commands used in the function are "legal" when
+used on strings just like when used on lists.
+
+2. histogram(3,[1,2,3,4]) returns an Error exit code because the function only
+runs when all numbers in the list are in the range of the number given
+(in our case 3), and 4 (which is in the list) is not in the range of 3.
+
+3. prime_factors(0) returns [0] because the function was never programmed to
+accept only possitive numbers, and so given that 0 is smaller than 2 the
+function wont check at all it's prime sources, instead it skips and treats
+0 as a prime number of it's own.
+
+4. pairs(2,[0,0,1,1,2,2]) returns [(2, 0), (2, 0), (1, 1)] because we only
+assumed that the list which the functions receives is injective,
+but we never programmed is to take care of examples which are not so.
+
+======================
+
